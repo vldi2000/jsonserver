@@ -11,3 +11,16 @@ https://my-json-server.typicode.com/vldi2000/jsonserver
 * PUT    /employees/{id}
 * PATCH  /employees/{id}
 * DELETE /employees/{id}
+
+Code example using python requests
+
+import requests
+
+url = "https://my-json-server.typicode.com/vldi2000/jsonserver/employees"
+
+payload = ""
+headers = {"Content-Type": "text/plain"}
+
+response = requests.request("GET", url, data=payload, headers=headers)
+
+print(response.text)
