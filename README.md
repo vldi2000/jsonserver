@@ -12,7 +12,7 @@ https://my-json-server.typicode.com/vldi2000/jsonserver
 * PATCH  /employees/{id}
 * DELETE /employees/{id}
 
-Code example using python requests
+* Code example using python requests
 
 import requests
 
