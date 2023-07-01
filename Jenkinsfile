@@ -1,15 +1,9 @@
 pipeline {
-  agent {
-    docker {
-      image 'seleniumbase'
-    }
-
-  }
+  agent none
   stages {
     stage('run') {
       steps {
-        sh '''docker run seleniumbase ./run_docker_test_in_chrome.sh
-'''
+        sh 'pytest my_basic_test.py --headless'
       }
     }
 
